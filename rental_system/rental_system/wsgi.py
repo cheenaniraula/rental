@@ -17,7 +17,7 @@ https://docs.djangoproject.com/en/2.2/howto/deployment/wsgi/
 import os
 import sys
 
-path = os.path.expanduser('~/django_projects/rental_system')
+path = os.path.expanduser('~/rental/rental_system/rental_systemm')
 if path not in sys.path:
     sys.path.insert(0, path)
 os.environ['DJANGO_SETTINGS_MODULE'] = 'rental_system.settings'
