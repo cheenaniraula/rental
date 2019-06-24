@@ -6,20 +6,14 @@ from .models import *
 # Create your views here.
 
 
-
-
 class Vehicle_CategoryView(generics.ListCreateAPIView):
     queryset = VehicleCategory.objects.all()
     serializer_class = VehicleCategorySerializers
 
 
-
-
 class VehicleView(generics.ListCreateAPIView):
     queryset = Vehicle.objects.all()
     serializer_class = VehicleSerializers
-    
-
 
 
 class Vehicle_TypeView(generics.ListCreateAPIView):
@@ -27,12 +21,9 @@ class Vehicle_TypeView(generics.ListCreateAPIView):
     serializer_class = Vehicle_TypeSerializers
 
 
-
 class CityView(generics.ListCreateAPIView):
     queryset = City.objects.all()
     serializer_class = CitySerializers
-
-
 
 
 class City_PlaceView(generics.ListCreateAPIView):
@@ -40,10 +31,19 @@ class City_PlaceView(generics.ListCreateAPIView):
     serializer_class = City_PlaceSerializers
 
 
-
-
 class CustomerView(generics.ListCreateAPIView):
     queryset = Customer.objects.all()
     serializer_class = CustomerSerializers
-    
+
+class DocumentView(generics.ListCreateAPIView):
+    queryset = Document.objects.all()
+    serializer_class = DocumentSerializers
+
+
+class CustomerSelectionView(generics.ListCreateAPIView):
+    queryset = Customer_Selection.objects.all()
+    serializer_class = CustomerSelectionSerializers
+
+
+
 
